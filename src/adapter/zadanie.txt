@@ -1,0 +1,2 @@
+Napisz interfejs który zwróci temperaturę w stopniach Celsjusza, jest to interfejs bazowy.
+Napisz adapter, który przeliczy temperature na jednostki Fahrenheit oraz Kelvin
