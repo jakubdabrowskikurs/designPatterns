@@ -1,0 +1,2 @@
+Zaimplementuj wzorzec projektowy Obserwator, który będzie powiadamiał obiekty, które będą zwracały cene. 
+Utwórz conajmniej dwa obiekty, które będą obserwatorami.

@@ -1,9 +1,15 @@
 package observer;
 
+import observer.manually.Magazine;
+import observer.manually.Reader;
+import observer.observer_interface.OMagazine;
+import observer.observer_interface.OReader;
+
 public class Main {
+
     public static void main(String[] args) {
-        NewsAgency observable = new NewsAgency();
-        NewsChannel observer = new NewsChannel();
+        Magazine observable = new Magazine();
+        Reader observer = new Reader();
 
         System.out.println(observer.getNews());
 
@@ -15,9 +21,9 @@ public class Main {
         //----------------------------------------------------
         System.out.println("Implementacja z interfejsem Observer");
 
-        ONewsAgency observableO = new ONewsAgency();
-        ONewsChannel observerO = new ONewsChannel();
-        ONewsChannel observerO2 = new ONewsChannel();
+        OMagazine observableO = new OMagazine();
+        OReader observerO = new OReader();
+        OReader observerO2 = new OReader();
 
         System.out.println(observerO.getNews());
 

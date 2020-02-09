@@ -1,10 +1,10 @@
 package adapter.zadanie;
 
-public class TemperatureInKImpl implements TemperatureAdapter {
+public class TemperatureInFImpl implements TemperatureAdapter {
 
     private Temperature temp;
 
-    public TemperatureInKImpl(Temperature temp) {
+    public TemperatureInFImpl(Temperature temp) {
         this.temp = temp;
     }
 
@@ -14,6 +14,6 @@ public class TemperatureInKImpl implements TemperatureAdapter {
     }
 
     private double convert(double temp) {
-        return temp + 273.15;
+        return (temp * 9/5)+ 32;
     }
 }

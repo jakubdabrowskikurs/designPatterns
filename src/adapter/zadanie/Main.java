@@ -9,5 +9,10 @@ public class Main {
         TemperatureInKImpl warsawTemperatureInK = new TemperatureInKImpl(warsaw);
 
         System.out.println("Temperatura w Warszawie wynosi " + warsawTemperatureInK.getTemperature() + " \u00b0K");
+
+        TemperatureInFImpl warsawTemperatureInF = new TemperatureInFImpl(warsaw);
+
+        System.out.println("Temperatura w Warszawie wynosi " + warsawTemperatureInF.getTemperature() + " \u00b0F");
+
     }
 }

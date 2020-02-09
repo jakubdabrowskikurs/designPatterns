@@ -8,5 +8,6 @@ public class Main {
         System.out.println(ASingleton.hashCode());
 
         System.out.println(ASingleton2.hashCode());
+
     }
 }
