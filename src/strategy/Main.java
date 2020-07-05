@@ -2,7 +2,7 @@ package strategy;
 
 public class Main {
 
-    private static String textToFormat = "wzoRzec Strategia Bardzo Fajny W Niedzię";
+    private static String textToFormat = "wzoRzec Strategia Bardzo Fajny ZaWszE";
 
     public static void main(String[] args) {
         StringFormatter stringFormatterC = new StringFormatter("capitalize");

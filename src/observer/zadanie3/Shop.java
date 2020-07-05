@@ -2,32 +2,33 @@ package observer.zadanie3;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Observable;
 
-public class Shop {
+public class Shop extends Observable {
 
     private double price;
-    private List<Product> channels = new ArrayList<>();
+    private List<Product> productList = new ArrayList<>();
     private double sale;
 
-    public void addObserver(Product channel) {
-        this.channels.add(channel);
+    public void addObserver(Product product) {
+        this.productList.add(product);
     }
 
-    public void removeObserver(Product channel) {
-        this.channels.remove(channel);
+    public void removeObserver(Product product) {
+        this.productList.remove(product);
     }
 
     public void setPrice(double price) {
         this.price = price;
-        for (Product channel : this.channels) {
-            channel.update(this.price);
+        for (Product product : this.productList) {
+            product.update(this.price);
         }
     }
 
     public void setSale(double sale) {
         this.sale = sale;
-        for (Product channel : this.channels) {
-            channel.sale(this.sale);
+        for (Product product : this.productList) {
+            product.sale(this.sale);
         }
     }
 }

@@ -10,7 +10,8 @@ public class SpeedAdapterImpl implements SpeedAdapter {
 
     @Override
     public double getSpeed() {
-        return convertMPHtoKMPH(vehicle.getSpeed());    }
+        return convertMPHtoKMPH(vehicle.getSpeed());
+    }
 
     private double convertMPHtoKMPH(double mph) {
         return mph * 1.6;

@@ -8,7 +8,6 @@ public class PhoneObserver implements Observer {
     private double price;
 
     @Override
-
     public void update(Observable o, Object sale) {
         double priceTemp = price * ((double) sale) / 100;
         this.setPrice(priceTemp);
